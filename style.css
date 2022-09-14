@@ -60,3 +60,13 @@
   background: #369dfe;
   color: #fff;
 }
+
+.singleItem {
+  padding-left: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+}
