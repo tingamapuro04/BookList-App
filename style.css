@@ -55,3 +55,8 @@
 .list {
   margin-top: 64px;
 }
+
+#sbtn {
+  background: #369dfe;
+  color: #fff;
+}
