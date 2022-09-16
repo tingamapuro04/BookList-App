@@ -70,3 +70,8 @@
   display: flex;
   justify-content: space-between;
 }
+
+#mobutu {
+  display: flex;
+  flex-direction: column;
+}
