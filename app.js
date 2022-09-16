@@ -36,12 +36,21 @@ class UI {
         <p>${book.title}</p>
         <p>${book.author}</p>
         <p>${book.category}</p>
-        <button>X</button>
+        <button class='delete'>X</button>
       </div>
     `
 
     unordered.appendChild(listItem)
   }
+
+  static removeperson(e) {
+    if (e.classList.contains('delete')) {
+      e.parentElement.parentElement.remove()
+    }
+
+  }
+
+
 }
 
 // Event to display Book
@@ -66,3 +75,6 @@ form.addEventListener('submit', weka)
 
 
 // Event: Remove a book
+const remove = document.querySelector('#unordered').addEventListener('click', (re) => {
+  UI.removeperson(re.target)
+})
